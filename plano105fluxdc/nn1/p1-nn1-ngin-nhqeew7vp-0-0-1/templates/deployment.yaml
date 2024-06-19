@@ -26,8 +26,8 @@ spec:
         {{- include "common.tplvalues.render" (dict "value" .Values.podLabels "context" $) | nindent 8 }}
         {{- end }}
       annotations:
-        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:p1:c60b3f60-810e-49a2-bff9-347d730e1365
-        dzsi.com/dzsx-network-function-href: https://10.157.107.69:8008/tmf-api/mano/serviceInventory/v4/p1/service/service:DZSXNetworkFunction:p1:c60b3f60-810e-49a2-bff9-347d730e1365
+        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:p1:a57b3b08-2e7d-4b71-870d-4806633513cb
+        dzsi.com/dzsx-network-function-href: https://10.157.107.69:8008/tmf-api/mano/serviceInventory/v4/p1/service/service:DZSXNetworkFunction:p1:a57b3b08-2e7d-4b71-870d-4806633513cb
         {{- if .Values.podAnnotations }}
         {{- include "common.tplvalues.render" ( dict "value" .Values.podAnnotations "context" $) | nindent 8 }}
         {{- end }}
