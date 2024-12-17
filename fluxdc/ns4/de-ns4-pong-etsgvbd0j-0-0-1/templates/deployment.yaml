@@ -21,8 +21,8 @@ spec:
         network-service-id: {{ .Values.global.nsId}}
         type: pong
       annotations:
-        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:default:80e00f41-dfae-449b-a60f-1ba9f14c87fa
-        dzsi.com/dzsx-network-function-href: https://10.157.107.66:8008/tmf-api/mano/serviceInventory/v4/default/service/service:DZSXNetworkFunction:default:80e00f41-dfae-449b-a60f-1ba9f14c87fa
+        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:default:639fda13-a167-4fe3-b534-1ad0f3650cb2
+        dzsi.com/dzsx-network-function-href: https://10.157.107.76:8008/tmf-api/mano/serviceInventory/v4/default/service/service:DZSXNetworkFunction:default:639fda13-a167-4fe3-b534-1ad0f3650cb2
         k8s.v1.cni.cncf.io/networks: '[{"name": {{ .Values.macvlanNetName | quote }},
                                         "namespace": {{ .Values.macvlanNetNamespace | quote }}}]'
         {{- if .Values.metrics.enabled }}
